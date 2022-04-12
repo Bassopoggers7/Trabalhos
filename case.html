@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Seleção de Produtos</title>
+    <link rel="stylesheet" href="./case.css">
+</head>
+<body>
+    <header>
+        <h2>Seleção de Produtos</h2>
+    </header>
+
+    <div class="container">
+        <h3>Lista de Produtos</h3>
+        <div class="div-produtos">
+            <input type="radio" name="tabaco"
+            onclick="selecionarProduto('Diamba Vencida')">
+            <label>Diamba Vencida</label>
+            <br>
+            <input type="radio" name="tabaco" 
+            onclick="selecionarProduto('Pod de Abacate')">
+            <label>Pod de Abacate</label>
+            <br>
+            <input type="radio" name="tabaco" 
+            onclick="selecionarProduto('Vape de Pimentão')">
+            <label>Vape de Pimentão</label>
+    
+        </div>
+        <div class="div-resultado">
+            <label id="resultado"></label>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li>Tabacaria do Chrome</li>
+            <li>Só tabacos</li>
+
+        </ul>
+    </footer>
+     <script src="case.js"></script>
+
+</body>
+</html>
