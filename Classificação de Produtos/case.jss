@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+header{
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 8, 92);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 25px;
+    color: rgb(255, 255, 255);
+
+}
+.container{
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 60%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+
+}
+.div-produtos{
+    border: 0px solid black;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 8px;
+    text-align: unset;
+}
+
+.div-resultado{
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 8px;
+}
