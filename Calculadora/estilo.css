@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+        text-align: center;
+        background-color: #dd1414;
+        background-image: linear-gradient(160deg, #dd1414 0%,  #e94343 100%);
+        font-size: 40px;
+    }
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px black;
+        font-size: 90px;
+    
+    }
+    
+    label{
+        color: white;    
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    input{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        text-align: center
+
+    }
+
+    button{
+        font-size: 17px;
+    }
+    
+    .bt {
+        border:1px solid #000000;
+        border-radius:4px;
+        display:inline-block;
+        cursor:pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 12px;
+        font-size: 18px;
+        padding:6px,;
+        text-decoration:none;
+        } 
+
+    
