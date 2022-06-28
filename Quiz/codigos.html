@@ -1,0 +1,328 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            background: url("https://wallpapercave.com/dwp1x/wp2511622.jpg");
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-size: 100%;
+ }
+        header {
+        padding: 20px;
+        font-size: 50px;
+}
+header > h2{
+ color:rgb(255, 255, 255);
+ font-family: Arial, Helvetica, sans-serif;
+ color: #ffffff;
+ text-align: center;
+
+}
+.container{
+
+background-color: rgb(255, 255, 255);
+border: 2px solid black;
+border-radius: 15px;
+margin: auto;
+text-align: center;
+margin-top: 16px;
+padding: 16px;
+width: 60%;
+font-size: 25px;
+
+
+}
+.outside{
+ width: 30%;
+ height: 100px;
+ background-color: rgb(255, 255, 255);
+ border-radius: 20px;
+ margin: auto;
+ margin-top: 20px;
+ padding: 8px;
+ border: 2px solid;
+ position: static;
+ display: table;
+ }
+ .inside {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin: auto;
+ display: table-cell;
+ vertical-align: middle;
+ text-align: center;
+ }
+
+.inside > p {
+ font-size: 20px;
+ }
+ .inside > select {
+ font-size: 15px;
+ }
+ .inside > button {
+ background-color: #a30000; 
+ border: 2px solid rgb(0, 0, 0);
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ }
+ .inside > button:hover {
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ cursor: pointer;
+ }
+ .inside > button:active {
+ box-shadow: none;
+ cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<header>
+ <h2> Quiz<br> Sobre o Futebol Brasileiro</h2>
+</header>
+<div class="container">
+<h4> Qual a maior torcida do Brasil? </h4>
+<p>Selecione uma resposta : <br><br>
+<select id="r1">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Vasco">Vasco</option>
+    <option value="Corinthians">Corinthians</option>
+    <option value="Flamengo">Flamengo</option>
+    <option value="Grêmio">Grêmio</option>
+</select></p>
+
+</div>
+
+<div class="container">
+ <h4> Qual o maior goleador da história do campeonato brasileiro? </h4>
+ <p>Selecione uma resposta :<br><br>
+ <select id="r2">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Romário">Romário</option>
+    <option value="Roberto Dinamite">Roberto Dinamite</option>
+    <option value="Fred">Fred</option>
+    <option value="Edmundo">Edmundo</option>
+
+ </select></p>
+ 
+ </div>
+ <div class="container">
+ <h4> Qual o primeiro time a ganhar o campeonato brasileiro na história? :<br><br>
+ <select id="r3">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Corinthians">Corinthians</option>
+    <option value="Palmeiras">Palmeiras</option>
+    <option value="Bahia">Bahia</option>
+    <option value="Internacional">Internacional</option>
+
+ </select></p>
+
+ </div>
+ <div class="container">
+ <h4> Qual o único time da história a ganhar o campeonato  brasileliro de forma invicta? </h4>
+ <p>Selecione uma resposta :<br><br>
+ <select id="r4">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Internacional">Internacional</option>
+    <option value="Cruzeiro">Cruzeiro</option>
+    <option value="Palmeiras">Palmeiras</option>
+    <option value="Santos">Santos</option>
+ </select></p>
+
+ </div>
+ 
+ <div class="container">
+ <h4> Qual time mais vezes ganhou o campeonato brasileiro? </h4>
+ <p>Selecione uma resposta :<br><br>
+ <select id="r5">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Cruzeiro">Cruzeiro</option>
+    <option value="Corinthians">Corinthians</option>
+    <option value="Flamengo">Flamengo</option>
+    <option value="Palmeiras">Palmeiras</option>
+
+ </select></p>
+
+ </div>
+ <div class="container">
+ <h4> Qual o jogador estrangeiro que mais jogou por clubes brasilieros? </h4>
+ <p>Selecione uma resposta :<br><br>
+ <select id="r6">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Kannemann">Kannemann</option>
+    <option value="Joel Carli">Joel Carli</option>
+    <option value="Conca">Conca</option>
+    <option value="Dalessandro">Dalessandro</option>
+ </select></p>
+
+ </div>
+ <div class="container">
+ <h4> O estádio Ilha do Retiro pertence a qual clube do futebol brasileiro?     </h4>
+ <p>Selecione uma resposta :<br><br>
+ <select id="r7">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Avai">Avai</option>
+    <option value="Sport">Sport</option>
+    <option value="Bahia">Bahia</option>
+    <option value="Naútico">Naútico</option>
+
+ </select></p>
+
+ </div>
+ 
+ <div class="container">
+ <h4> Qual foi o time mais vezes rebaixado na serie A do Brasileirão? </h4>
+ <p>Selecione uma resposta :<br><br>
+ <select id="r8">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Grêmio">Grêmio</option>
+    <option value="Coritiba">Coritiba</option>
+    <option value="Vasco">Vasco</option>
+    <option value="Avaí">Avaí</option>
+
+ </select></p>
+
+ </div>
+ <div class="container">
+ <h4>Que time ganhou a Libertadores e o Mundial em 2006? </h4>
+ <p>Selecione uma resposta :<br><br>
+ <select id="r9">
+    <option value="ㅤ">ㅤ</option>
+    <option value="Corinthians">Corinthians</option>
+    <option value="Santos">Santos</option>
+    <option value="Internacional">Internacional</option>
+    <option value="São Paulo">São Paulo</option>
+
+ </select></p>
+
+ </div>
+ <div class="container">
+ <h4> Qual o ano que ocorreu o primeiro campeonato brasileiro? </h4>
+ <p>Selecione uma resposta :<br><br>
+ <select id="r10">
+    <option value="ㅤ">ㅤ</option>
+    <option value="1956">1956</option>
+    <option value="1957">1957</option>
+    <option value="1958">1958</option>
+    <option value="1959">1959</option>
+
+ </select></p>
+
+ </div>
+ </div>
+ <div class="outside">
+ <div class="inside">
+ <h1>Sua Pontuação :</h1>
+ <button id="fim" onclick="setPontos()">Ver pontuação</button>
+ <h3 id="pontuação"></h3>
+ </div>
+ </div>
+
+<footer>
+ <script>
+ 
+ let question1 = document.querySelector("#r1")
+ let question2 = document.querySelector("#r2")
+ let question3 = document.querySelector("#r3")
+ let question4 = document.querySelector("#r4")
+ let question5 = document.querySelector("#r5")
+ let question6 = document.querySelector("#r6")
+ let question7 = document.querySelector("#r7")
+ let question8 = document.querySelector("#r8")
+ let question9 = document.querySelector("#r9")
+ let question10 = document.querySelector("#r10")
+ var paragrafo = document.querySelector("#pontuação")
+ let nome = sessionStorage.getItem('nome')
+
+ function setPontos(){
+ let resposta1 = question1.value
+ let resposta2 = question2.value
+ let resposta3 = question3.value
+ let resposta4 = question4.value
+ let resposta5 = question5.value
+ let resposta6 = question6.value
+ let resposta7 = question7.value
+ let resposta8 = question8.value
+ let resposta9 = question9.value
+ let resposta10 = question10.value
+ let pontos = 0
+ let frase = ""
+
+ if (resposta1 === "Flamengo") {
+ pontos++
+ }
+ if (resposta2 === "Roberto Dinamite") {
+ pontos++
+ }
+ if (resposta3 === "Bahia") {
+ pontos++
+ }
+ if (resposta4 === "Internacional") {
+ pontos++
+ }
+ if (resposta5 === "Palmeiras") {
+ pontos++
+ }
+ if (resposta6 === "Dalessandro") {
+ pontos++
+ }
+ if (resposta7 === "Sport") {
+ pontos++
+ }
+ if (resposta8 === "Coritiba") {
+ pontos++
+ }
+ if (resposta9 === "Internacional") {
+ pontos++
+ }
+ if (resposta10 === "1959") {
+ pontos++
+            }
+            if (pontos === 0) {
+                frase = "Boa sorte da próxima vez!"
+            }
+            else if (pontos === 1) {
+                frase = "Chegando lá!"
+            }
+            else if (pontos === 2) {
+                frase = "Nada mal!"
+            }
+            else if (pontos === 3) {
+                frase = "Bom!"
+            }
+            else if (pontos === 4) {
+                frase = "Tá indo!"
+            }
+            else if (pontos === 5) {
+                frase = "Metade do caminho!"
+            }
+            else if (pontos === 6) {
+                frase = "Quase lá"
+            }
+            else if (pontos === 7) {
+                frase = "Na média!"
+            }
+            else if (pontos === 8) {
+                frase = "Boa falta pouco!"
+            }
+            else if (pontos === 9) {
+                frase = "Sabe muito!"
+            }
+            else if (pontos === 10) {
+                frase = "Uma máquina do conhecimento!"
+                }
+ 
+ paragrafo.innerText =  nome + " conseguiu: " + pontos +"/10\n" + frase
+ }
+ 
+ </script>
+
+</body>
+</html>
