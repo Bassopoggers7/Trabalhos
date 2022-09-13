@@ -1,0 +1,46 @@
+.header {
+    color: rgb(251, 108, 41);
+    background-color: rgb(254, 209, 157);
+    padding: 1rem;
+}
+
+.nav {
+    background-color: rgb(214, 203, 196);
+    padding: 0.1rem;
+    text-align: start;
+}
+
+.container {
+    border: 2px solid rgb(251, 108, 41);
+    padding: 4px;
+    width: 75vw;
+    height: 25vw;
+    margin: auto;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.h2{
+    color: rgb(251, 108, 41);
+    background-color: rgb(224, 190, 129);
+}
+
+.result{
+    background-color: rgb(224, 190, 129);
+    border: border: 2px solid rgb(251, 108, 41);
+    width: 75vw;
+    height: 5vw;
+    margin: auto;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    color: white;
+    background-color: rgb(255, 115, 0);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
