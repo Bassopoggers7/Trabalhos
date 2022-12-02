@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <html lang="Pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <title>Copa do Mundo</title>
+    </head>
+    <body>
+
+
+      <nav class="navbar">
+        <div class="content">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#HOME">Home</a></li>
+            <li><a href="#PQS">Pesquisa</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      </div>
+
+
+      <div class="home" id="HOME">
+         <div class="home_txt">
+             <h1>Copa do Mundo</h1>
+      <div class="home__shadow"></div>
+        </div>
+      </div>
+
+     
+      <div class="pesquisa">
+        <h2>⚽️</h2></div>
+
+
+
+
+
+      <div class="about">
+        <div class="contentBx">
+          <h2>Arbitragem</h2>
+            <p>Em 19 de maio de 2022, a FIFA anunciou a lista de 36 árbitros e 69 árbitros assistentes e 24 árbitro assistente de vídeo para o torneio.[88][89] A FIFA anunciou na sexta-feira, 1.º de junho de 2022, que vai utilizar uma nova tecnologia para auxiliar árbitros de campo e responsáveis pelo VAR (videoárbitro) na Copa do Mundo. O impedimento semiautomático tem como propósito diminuir o tempo de análise em lances ajustados e promover decisões mais rápidas por parte da arbitragem.</p>
+              </div>
+                <a class="planet">🏟️</a>
+       </div>
+
+       <div class="about">
+        <div class="contentBx">
+          <h2>Brasil na copa</h2>
+            <p>Sede de duas Copas do Mundo (1950 e 2014), o Brasil é a única seleção a participar de todas as edições do evento e a maior vencedora da competição, com cinco títulos, todos fora de casa. Na edição atual, o Brasil foi a primeira seleção a ser classificada, com quatro rodadas de antecedência nas eliminatórias da América do Sul.</p>
+              </div>
+                <a class="planet">🇧🇷</a>
+       </div>
+
+       <div class="about">
+        <div class="contentBx">
+          <h2>1930</h2>
+            <p>O Brasil esteve presente para a disputa da 1ª Copa do Mundo, que se realizaria no Uruguai. Mas um desentendimento entre times do Estado do Rio de Janeiro e times do Estado de São Paulo, ao preparar a escolha de seus jogadores, fez com que os melhores jogadores não participassem. A seleção entrou em um triangular entre Iugoslávia e Bolívia, onde somente o primeiro do grupo se classificaria. No 1º jogo, perderia pra Iugoslávia por 2–1 e no 2º jogo golearia a Bolívia em 4–0, mas seria eliminado na 1ª fase desta Copa.</p>
+              </div>
+                <a class="planet">🇺🇾</a>
+       </div>
+
+       <div class="about" id="PQS">
+        <div class="contentBx">
+          <h2>2022</h2>
+            <p>a Copa do Catar é a vigésima segunda edição desse evento esportivo, um torneio internacional de futebol masculino organizado pela Federação Internacional de Futebol (FIFA), que está ocorrendo no Catar. Esta edição é a primeira realizada no Oriente Médio, e é a última a ter o formato de 32 equipes, pois haverá uma mudança no formato e número de equipes na edição seguinte, a de 2026, cujos países-sedes serão Canadá, Estados Unidos e México, passando para 48 equipes.</p>
+              </div>
+                <a class="planet">🇶🇦</a>
+       </div>
+
+
+
+   <footer>
+         <div class="main-content">
+             <div class="left box">
+                <h2>SESI SENAI</h2>
+                 <div class="content">
+                   <p>David Basso 2°A</p>
+                   </div>
+                  </div>
+
+  </footer>
+
+
+              <script type="text/javascript">
+
+                let allResult = JSON.parse(localStorage.getItem('allResult')) || []; 
+                showData();
+
+                function deleteResult( key ){
+                allResult.slice(key , 1);
+
+                const datafiltered =allResult.filter((e, i)=> i != key);
+                localStorage.setItem('allResult', JSON.stringify(datafiltered));
+                allResult = datafiltered;
+
+                window.location.reload(true);
+              }
+              function showData(){
+                let resultdiv = document.getElementById('result')
+
+                allResult.map((e, i) => {
+                  resultdiv.innerHTML = `<div class="d-flex">
+                    <p> ${e.result}'</p>
+                    <button onclick="deleteResult(${i})" >Excluir</button>
+                    `;
+                  })
+                }
+                function calculation(v)
+                {
+                  para = document.createElement('p');
+                  data = v + '=' + eval(v);
+
+                  allResult.push({result : data});
+                  localStorage.setItem("allResult", JSON.stringify(allResult));
+                  allResult = JSON.parse(localStorage.getItem('allResult'));
+                  window.location.reload(true);
+                }
+              </script>
+
+
+              <script>
+                const body = document.querySelector("body");
+                const navbar = document.querySelector(".navbar");
+                const menuBtn = document.querySelector(".menu-btn");
+                const cancelBtn = document.querySelector(".cancel-btn");
+                menuBtn.onclick = ()=>{
+                  navbar.classList.add("show");
+                  menuBtn.classList.add("hide");
+                  body.classList.add("disabled");
+                }
+                cancelBtn.onclick = ()=>{
+                  body.classList.remove("disabled");
+                  navbar.classList.remove("show");
+                  menuBtn.classList.remove("hide");
+                }
+                window.onscroll = ()=>{
+                  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+                }
+              </script>
+
+
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+              <script type="text/javascript" src="./js/three.js"></script>
+              <script>VanillaTilt.init(document.querySelectorAll(".cards"), {
+                  max: 25,
+                  speed:300,
+              });
+          </script>
+          <script src="/js/three.js"></script>
+    </body>
+</html>
