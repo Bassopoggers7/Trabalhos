@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="img/logo.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="/Ação 2/style.css">
 
         <title>Copa do Mundo</title>
     </head>
@@ -48,7 +48,7 @@
       <div class="about">
         <div class="contentBx">
           <h2>Arbitragem</h2>
-            <p>Em 19 de maio de 2022, a FIFA anunciou a lista de 36 árbitros e 69 árbitros assistentes e 24 árbitro assistente de vídeo para o torneio.[88][89] A FIFA anunciou na sexta-feira, 1.º de junho de 2022, que vai utilizar uma nova tecnologia para auxiliar árbitros de campo e responsáveis pelo VAR (videoárbitro) na Copa do Mundo. O impedimento semiautomático tem como propósito diminuir o tempo de análise em lances ajustados e promover decisões mais rápidas por parte da arbitragem.</p>
+            <p>Em 19 de maio de 2022, a FIFA anunciou a lista de 36 árbitros e 69 árbitros assistentes e 24 árbitro assistente de vídeo para o torneio. A FIFA anunciou na sexta-feira, 1.º de junho de 2022, que vai utilizar uma nova tecnologia para auxiliar árbitros de campo e responsáveis pelo VAR (videoárbitro) na Copa do Mundo. O impedimento semiautomático tem como propósito diminuir o tempo de análise em lances ajustados e promover decisões mais rápidas por parte da arbitragem.</p>
               </div>
                 <a class="planet">🏟️</a>
        </div>
@@ -59,6 +59,14 @@
             <p>Sede de duas Copas do Mundo (1950 e 2014), o Brasil é a única seleção a participar de todas as edições do evento e a maior vencedora da competição, com cinco títulos, todos fora de casa. Na edição atual, o Brasil foi a primeira seleção a ser classificada, com quatro rodadas de antecedência nas eliminatórias da América do Sul.</p>
               </div>
                 <a class="planet">🇧🇷</a>
+               <li>
+                <div class="jogadores"></div>
+                       
+                <img class="img1" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt130f91cf525301d5/60ddd930a37ada0f2cd707d6/78290e69b98359c472eb0f4838cea8c383708d7d.jpg" alt="">
+                        <img class="img2" src="https://cdn.diariodolitoral.com.br/img/pc/920/610/dn_arquivo/2022/10/ca1bbaea-48be-401d-ac95-89ea3144a78b.jpeg" alt=""/>
+                        <img class="img3" src="https://cdn.diariodolitoral.com.br/img/social/1200/1200/dn_arquivo/2022/10/6672ada0-bc20-4569-afe4-e8e0453b5990.jpeg" alt="" />
+               </li>
+            </ul>
        </div>
 
        <div class="about">
@@ -79,16 +87,6 @@
 
 
 
-   <footer>
-         <div class="main-content">
-             <div class="left box">
-                <h2>SESI SENAI</h2>
-                 <div class="content">
-                   <p>David Basso 2°A</p>
-                   </div>
-                  </div>
-
-  </footer>
 
 
               <script type="text/javascript">
@@ -153,12 +151,22 @@
               <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-              <script type="text/javascript" src="./js/three.js"></script>
+              <script type="text/javascript" src="/Ação 3/three.js"></script>
               <script>VanillaTilt.init(document.querySelectorAll(".cards"), {
                   max: 25,
                   speed:300,
               });
           </script>
-          <script src="/js/three.js"></script>
+          <script src="/Ação 3/three.js"></script>
+          
+          <footer>
+            <div class="main-content">
+                <div class="left box">
+                   <h2>SESI SENAI</h2>
+                    <div class="content">
+                      <p>David Basso 2°A</p>
+                      </div>
+                     </div>
+     </footer>
+   
     </body>
-</html>
