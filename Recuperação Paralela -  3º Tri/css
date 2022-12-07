@@ -1,4 +1,4 @@
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -618,4 +618,27 @@
     {
         transform: rotate(360deg);
     }
-  
+
+.jogadores{
+  margin-top: relative;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img1{
+  width: 10cm;
+  height: 7cm;
+}
+
+.img2{
+  width: 10cm;
+  margin-left: 0.5cm;
+  margin-right: 0.5cm;
+}
+
+.img3{
+  width: 10cm;
+ 
+}
