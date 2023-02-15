@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+    <html lang="Pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href=""/>
+        <link rel="stylesheet" href=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Investimentos Financeiros</title>
+    </head>
+    <body>
+
+
+      <nav class="navbar">
+        <div class="content">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      </div>
+
+
+      <div class="home" id="HOME">
+         <div class="home_txt">
+             <h1>Tudo que você precisa saber sobre investimentos e como deve começar a investir:</h1>
+      <div class="home__shadow"></div>
+        </div>
+      </div>
+
+     
+      <div class="pesquisa">
+        <h2></h2></div>
+
+
+
+
+
+      <div class="about">
+        <div class="contentBx">
+          <h2>O que é um investimento financeiro?</h2>
+            <p>Investimentos financeiros são aqueles quando você aplica dinheiro em ativos financeiros, isto é, aqueles ativos não-físicos e não-intangíveis que estabelecem uma relação contratual entre o investidor e uma instituição por uma riqueza ou privilégio de receber um valor corrigido por juros.</p>
+              </div>
+                <a class="planet"></a>
+       </div>
+
+       <div class="about">
+        <div class="contentBx">
+          <h2></h2>
+            <p> </p>
+              </div>
+                <a class="planet"></a>
+               <li>
+                <div class="jogadores"></div>
+      
+               </li>
+            </ul>
+       </div>
+
+       <div class="about">
+        <div class="contentBx">
+          <h2></h2>
+            <p> </p>
+              </div>
+                <a class="planet"></a>
+       </div>
+
+       <div class="about" id="PQS">
+        <div class="contentBx">
+          <h2></h2>
+            <p> </p>
+              </div>
+                <a class="planet"></a>
+       </div>
+
+
+
+
+
+              <script type="text/javascript">
+
+                let allResult = JSON.parse(localStorage.getItem('allResult')) || []; 
+                showData();
+
+                function deleteResult( key ){
+                allResult.slice(key , 1);
+
+                const datafiltered =allResult.filter((e, i)=> i != key);
+                localStorage.setItem('allResult', JSON.stringify(datafiltered));
+                allResult = datafiltered;
+
+                window.location.reload(true);
+              }
+              function showData(){
+                let resultdiv = document.getElementById('result')
+
+                allResult.map((e, i) => {
+                  resultdiv.innerHTML = `<div class="d-flex">
+                    <p> ${e.result}'</p>
+                    <button onclick="deleteResult(${i})" >Excluir</button>
+                    `;
+                  })
+                }
+                function calculation(v)
+                {
+                  para = document.createElement('p');
+                  data = v + '=' + eval(v);
+
+                  allResult.push({result : data});
+                  localStorage.setItem("allResult", JSON.stringify(allResult));
+                  allResult = JSON.parse(localStorage.getItem('allResult'));
+                  window.location.reload(true);
+                }
+              </script>
+
+
+              <script>
+                const body = document.querySelector("body");
+                const navbar = document.querySelector(".navbar");
+                const menuBtn = document.querySelector(".menu-btn");
+                const cancelBtn = document.querySelector(".cancel-btn");
+                menuBtn.onclick = ()=>{
+                  navbar.classList.add("show");
+                  menuBtn.classList.add("hide");
+                  body.classList.add("disabled");
+                }
+                cancelBtn.onclick = ()=>{
+                  body.classList.remove("disabled");
+                  navbar.classList.remove("show");
+                  menuBtn.classList.remove("hide");
+                }
+                window.onscroll = ()=>{
+                  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+                }
+              </script>
+
+
+              <script type="module" src="></script>
+              <script nomodule src=""></script>
+
+
+              <script type="text/javascript" src="/Ação 3/three.js"></script>
+              <script>VanillaTilt.init(document.querySelectorAll(".cards"), {
+                  max: 25,
+                  speed:300,
+              });
+          </script>
+          <script src="/Ação 3/three.js"></script>
+          
+          <footer>
+            <div class="main-content">
+                <div class="left box">
+                   <h2>SESI SENAI</h2>
+                    <div class="content">
+                      <p>David Basso 3°A</p>
+                      </div>
+                     </div>
+     </footer>
+   
+    </body>
