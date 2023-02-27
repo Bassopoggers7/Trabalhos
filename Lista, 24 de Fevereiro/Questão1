@@ -10,7 +10,7 @@
     
     <script>
 
-        let escola = {
+        let jogador = {
              nome: 'Cristiano Ronaldo',
              idade: 38,
              aprovado: true,
